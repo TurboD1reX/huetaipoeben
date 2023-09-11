@@ -8,19 +8,24 @@
   }
   
   input {
+    color:white;
     font-size:15px;
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
     border:1.5px solid #000000;
+    background-color:#474747;
     border-radius: 4px;
     box-sizing: border-box;
   }
   textarea{
+    color:white;
+    background-color:#474747;
     max-width:100%;
-    min-height:100px;
-    max-height:150px;
+    min-width:100%;
+    min-height:45px;
+    max-height:45px;
     font-size:15px;
     width: 100%;
     padding: 12px 20px;
@@ -29,11 +34,12 @@
     border:1.5px solid #000000;
     border-radius: 4px;
     box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
   .title{
-    margin:185px;
+    margin:200px;
     Font-size:40px;
-    color:#e9dada;
+    color:#000000;
   }
   form{
     border-radius:0.8% 5%;
@@ -43,12 +49,8 @@
     margin-top:4.5rem;
     padding:30px;
     height:30rem;
-    background-color:#cf3845;
+    background-color:#969696;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  }
-  input[type=text]{
-    margin-top:40px;
-    width: 49.5%;
   }
   input[type=Submit],input[type=Reset]{
     font-size:20px;
@@ -71,7 +73,7 @@
   }
   input[type=email]:invalid {
     z-index:80;
-    border: 1px solid rgb(255, 174, 0);
+    border: 2px solid rgb(218, 0, 0);
   }
 
   
@@ -168,7 +170,6 @@
         width: 100%;
         left: 0;
         animation: disperse 0.15s ease-in-out; 
-        border-radius: 10% 13%;
       }
       
       @keyframes disperse {
@@ -216,5 +217,33 @@
         top: 16%; 
         opacity: 1;
     }
+  }
+  #title_information{
+    position:absolute;
+    top:-3rem;
+    left:1rem;
+    Font-size:33px;
+    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Phudu', cursive;
+    font-family: 'Titan One', cursive;
+    font-weight: 900;
+    border-bottom:2.5px solid;
+    max-width:200px;;
+    }
+  
+
+  #information_order{
+    font-size:25px;
+    position:absolute;
+    width:40rem;
+    height:8rem;
+    top:22rem;
+    left:65rem;
+    font-family: 'Phudu', cursive;
+
+  }
+  #contact_information{
+    color:#575757;
+    text-decoration: none;
   }
        
