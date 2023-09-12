@@ -1,0 +1,61 @@
+*{
+    box-sizing:0;
+    margin:0;
+  }
+  #photo_main{
+    left:15rem;
+    position:absolute;
+    top:7rem;
+    width:35rem;
+    height:35rem;
+    border-radius:1% 4%;
+    box-shadow: 0px 0px 10px 2px ;
+  }
+  #text_thankyou{
+    font-size:22px;
+    width:25%;
+    height:50%;
+    position:absolute;
+    top:9rem;
+    left:65rem;
+      font-family: 'Phudu', cursive;
+  }
+  #tytul_text{
+    font-size:28px;
+    margin-left:2rem;
+    border-bottom:2px solid;
+    position:absolute;
+    margin-top:-4rem;
+    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Phudu', cursive;
+    font-family: 'Titan One', cursive;
+  }
+  #contact_article{
+font-size:larger;
+color:black;
+font-weight:600;
+}
+  #end_thankyou{
+position:absolute;
+font-size:larger;
+margin-top:2rem;
+margin-left:12rem;
+font-family: 'Luckiest Guy', cursive;
+font-family: 'Phudu', cursive;
+font-family: 'Titan One', cursive;
+
+ 
+  }
+  #return_thankyou{
+    position:absolute;
+    top:48rem;
+    left:30rem;
+    font-size:60px;
+    width:40rem;
+    font-weight: 900;
+    text-shadow: rgb(31, 36, 107) 1px 0 10px;
+    background-image:linear-gradient(to bottom  right, rgb(57, 80, 94), #063da3);
+    border-radius:25px 40px  ;
+    border:2px solid #515a5e;
+    cursor:pointer;
+  }

@@ -36,7 +36,7 @@ function zmiana_return() {
     document.querySelector("article").style.textShadow = "none";
     document.getElementById("o_nas_tytul").style.borderColor = "black";
     document.getElementById("o_nas_tytul").style.color = "black";
-    document.getElementById("preorder_photo").style.boxShadow= "0px 0px 10px 2px rgba(255, 136, 0, 0.8)"; 
+    document.getElementById("preorder_photo").style.boxShadow= "0px 0px 10px 2px "; 
     document.getElementById("text_preorder_2").style.color = "#575757";
     document.getElementById("text_preorder_1").style.color = "#000000";
     document.getElementById("text_preorder_2").style.textShadow = "none";
