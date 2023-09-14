@@ -2,42 +2,67 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=2.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="ordering.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Exo+2:wght@600&family=Luckiest+Guy&family=Phudu&family=Rubik:wght@600&family=Teko:wght@700&family=Timmana&family=Titan+One&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KSM Label - muzyka spiewana przez glos sibi'ego oraz nalozyny na niego ai prod.@autystyczny">
+    <meta name="keywords" content="Label,KSM , KSM Label, ksm, muzyka,ai,sztuczna inteligencja,artificial intelligence">
+    <meta name="author" content="Yehor Kryvoi">
     <link rel="icon" type="image/png" href="photos/LOGO_ICON.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="ordering.css">
 <title>KSM Label | Order </title>
 </head>
 <body>
-    <a href="index.html"id="form_return" ><i class="fa fa-chevron-circle-left" ></i></a>
-<div id="container"><!--container-->
-    <nav class="nav"><!--navbar-->
-            <img src="photos/KSMLABEL_LOGO_NAVBAR.png" id="nav_logo"> 
-                <a href="https://instagram.com/ksm.label?igshid=OGQ5ZDc2ODk2ZA=="  id="link_nav" >Instagram <i class="fa fa-instagram" style="font-size:25px"></i></a>
-                    <a href="https://on.soundcloud.com/Ud1grQkiWXs1igxVA" id="link_nav">SoundCloud <i class="fa fa-soundcloud" style="font-size:25px"></i></a> 
-                        <a href="https://youtube.com/@KSMLABEL?si=FTqt5olVTABpWKnR" id="link_nav">Youtube <i class="fa fa-youtube-play" style="font-size:25px;"></i></a>
-                    <a href="twitter" id="link_nav">Twitter <i class="fa fa-twitter" style="font-size:28px;"></i></a>
-                <i class="fa fa-adjust" id="theme_changer" onclick="zmiana()"></i>
-            <i class="fa fa-adjust" id="theme_changer_2" onclick="zmiana_return()"></i>
-    </nav>  <!--navbar-end-->
-    <form action="https://formsubmit.io/send/ksmlaabel@gmail.com" method="POST" id="content1">
+
+<div   class="container-fluid"><!--container-->
+    <div class="row"><!--row-->
+    <nav class="navbar navbar-dark  navbar-expand-md"><!--navbar-->
+        <a href="index.html" class="return_form"><i class="fa fa-chevron-circle-left" ></i></a>
+        <a class="navbar-brand" href="index.html"><img src="photos/KSM_LOGO_NAVBAR.png" class="d-inline-block mr-1 align-bottom" alt="" width="150px" height="150px"></a> 
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_main" aria-controls="navbar_main" aria-expanded="false" aria-label="Przełącznik nawigacji">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+                <div class="collapse navbar-collapse" id="navbar_main">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item" style="text-align: center;;">
+                            <a href="https://instagram.com/ksm.label?igshid=OGQ5ZDc2ODk2ZA=="  id="link_nav" >Instagram <i class="fa fa-instagram" style="font-size:25px"></i></a> 
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                            <a href="https://on.soundcloud.com/Ud1grQkiWXs1igxVA" id="link_nav">SoundCloud <i class="fa fa-soundcloud" style="font-size:25px"></i></a> 
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                            <a href="https://youtube.com/@KSMLABEL?si=FTqt5olVTABpWKnR" id="link_nav">Youtube <i class="fa fa-youtube-play" style="font-size:25px;"></i></a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                            <a href="twitter" id="link_nav">Twitter <i class="fa fa-twitter" style="font-size:25px;"></i></a>
+                            </li>
+                        </ul>
+                </div>
+            </nav>  <!--navbar-end-->
+<div class="col-sm5-md5">
+    <form action="https://formsubmit.io/send/ksmlaabel@gmail.com" method="POST" >
         <span class="title">Order</span><br>
-          <label for="text">Imie i Nazwisko:</label>
-            <input type="text" id="text" name="text" placeholder="Imie i Nazwisko">
-                  <label for="email">Twój e-mail:</label>
-                    <input type="email" id="email" name="email" placeholder="Wpisz swój adres e-mail">
-                      <label for="number">Numer Telefonu:</label>
-                         <input type="number" id="number" name="number" placeholder="+XX XXX-XXX-XXX">
-                            <label for="text">Informacje dodatkowe:</label><br> 
-            <textarea name="message" rows="5" cols="75" id="text_form" placeholder="Informacje dodatkowe"></textarea>
-          <input type="Reset" value="Cancel"></button>
+        <label for="text">Imie i Nazwisko:</label>
+        <input type="text" id="text" name="text" placeholder="Imie i Nazwisko">
+        <label for="email">Twój e-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Wpisz swój adres e-mail">
+        <label for="number">Numer Telefonu:</label>
+        <input type="number" id="number" name="number" placeholder="+XX XXX-XXX-XXX">
+        <label for="text">Informacje dodatkowe:</label><br> 
+        <textarea name="message" rows="5" cols="75" id="text_form" placeholder="Adres-dostawy"></textarea>
+        <input type="Reset" value="Cancel"></button>
         <input type="Submit"  value="Submit"></button>
-</form> 
-<article id="information_order">
+        <input name="_redirect" type="hidden" id="name" value="ty.html">
+    </form>
+</div>
+<article >
     <div id="title_information">Informacje </div>
 <p>
     Wypełniając formularz obok, wiadomość zostanie przesłana na adres e-mail.
@@ -45,10 +70,11 @@
     W polu "Informacje Dodatkowe" mozna wpisac adres dostawy (kontaktowac sie przez <a href="https://instagram.com/ksm.label?igshid=OGQ5ZDc2ODk2ZA==" style="color:black;">Instagram</a>), w przeciwnym przypadku "-".
     Formularz służy także weryfikacji zgodności przelewu i danych wypelnionych w formularzu.
     Dokładamy wszelkich starań, aby zapewnić Państwu najlepszą obsługę.Liczymy na Państwa zrozumienie i pozostajemy do dyspozycji w razie pytań.<br>
-
-    <center style="padding:20px;">Dziękujemy za współpracę.</center></p>
+    <hr style="width:10%;">
+    <br><center>Dziękujemy za współpracę.</center></p>
 
 </article>
+</div><!--row-end-->
 </div><!--container-end-->
 <footer>
 <a href="form.html"><div id="contact">Contact with Us <i class="fa fa-comment" style="font-size:20px;"></i></div></a>
