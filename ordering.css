@@ -1,10 +1,10 @@
 
 *{
-    box-sizing:0;
-    margin:0;
+    font-family: 'Oswald', sans-serif;
   }
   label{
-    margin:10px;
+    color:#c0c0c0;
+    margin:5px;
   }
   
   input {
@@ -18,6 +18,9 @@
     background-color:#474747;
     border-radius: 4px;
     box-sizing: border-box;
+  }
+  .return_form{
+    display:none;
   }
   textarea{
     color:white;
@@ -34,23 +37,22 @@
     border:1.5px solid #000000;
     border-radius: 4px;
     box-sizing: border-box;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
   }
   .title{
-    margin:200px;
+    margin:230px;
     Font-size:40px;
-    color:#000000;
+    color:#c0c0c0;
   }
-  #form_order{
+  form{
     border-radius:0.8% 5%;
     font-weight: bolder;
-    position:absolute;
-    width:27%;
+    width:100%;
     margin-top:4.5rem;
     padding:30px;
-    height:30rem;
-    background-color:#ffffff;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height:38em;
+    background-color:#39587D;
+    
   }
   input[type=Submit],input[type=Reset]{
     font-size:20px;
@@ -73,8 +75,7 @@
   text-transform: lowercase;
   }
   input[type=email]:invalid {
-    z-index:80;
-    border: 2px solid rgb(218, 0, 0);
+    border: 2px solid rgb(170, 0, 0);
   }
     footer{
       box-shadow: 1px 2px 15px 5px rgba(0, 0, 0, 0.8);
@@ -83,7 +84,7 @@
       width:100%;
       height:100px;
       background-color:#000000;
-      margin-top:42.55rem;
+      margin-top:22.55rem;
       text-align: center;
       font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
@@ -97,9 +98,19 @@
     #footer_link:hover,#contact:hover{
     color:#747474;
     }
- 
+    article{
+      margin-top:200px;
+      width:15%;
+      height:30%;
+      font-size:25px;
+      margin-bottom:30px;
+    }
+    article hr{
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+    }
 nav{
-
   width:100%;                                                                                 
   height:150px;
   box-shadow: 2px 2px 15px 10px rgba(0, 0, 0, 0.8);
@@ -122,6 +133,9 @@ nav{
     color: #C0C0C0;
     transition: ease 0.2s;
   }
+  .row hr{
+ display:none;
+  }
   #return{ 
     font-size:300px;
     text-decoration:none;
@@ -133,18 +147,58 @@ nav{
     border-bottom: 2px solid #C0C0C0; /* Добавлено слово "solid" для задания стиля рамки */
     border-radius: 5% / 10%;
   }
+
   @media only screen and (max-width: 600px){
     #return_from{ 
       display:none;
     }
     footer{
+      font-size:larger;
       margin-top:30px;
-      height:150px;
+      height:220px;
+      
     }
     nav img {
       margin:0px;
     }
     .title{
-      margin-left:110px;
+      margin-left:0px;
+    
+    }
+    form{
+    margin-top:50px;
+    }
+    article{
+      margin-top:200px;
+      font-size:20px;
+    }
+    article hr{
+      width:70%;
+      display:flex;
+    }
+    #footer_link{
+      margin:5px;
+    }
+    .return_form{
+      display:flex;
+      font-size:35px;
+      text-decoration: none;
+      color:white;
+      margin-left:70px;
+    }
+    #title_information{
+      margin-top:70px;
+      margin-left:30px;
+      border-bottom:2px solid;
+      width:130px;
+      font-size:xx-large;
+      text-align: center;
+    }
+    .row hr{
+      margin-top:100px;
+      width:300px;
+      margin-left:auto;
+      margin-right:auto;
+      display:flex;
     }
   }
