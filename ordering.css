@@ -1,9 +1,11 @@
 
 *{
     font-family: 'Oswald', sans-serif;
+
   }
   label{
-    color:#c0c0c0;
+    font-size:larger;
+    color:#4578BD;
     margin:5px;
   }
   
@@ -42,20 +44,22 @@
   .title{
     margin:230px;
     Font-size:40px;
-    color:#c0c0c0;
+    color:#193d6e;
   }
   form{
-    border-radius:0.8% 5%;
+    border-radius:10%;
     font-weight: bolder;
     width:100%;
-    margin-top:4.5rem;
+    margin-top:1.1rem;
+    margin-left:200px;
+    border:2px solid #193d6e;
     padding:30px;
     height:38em;
-    background-color:#39587D;
+
     
   }
   input[type=Submit],input[type=Reset]{
-    font-size:20px;
+    font-size:25px;
     font-weight:20px;
     width: 49%;
     background-color: #242424;
@@ -69,6 +73,7 @@
   input[type=Submit]:hover,input[type=Reset]:hover{
     transition:ease 0.2s;
     transform:scale(0.95);
+    color:#39587D
   }
   
   input[type=email] {
@@ -78,16 +83,15 @@
     border: 2px solid rgb(170, 0, 0);
   }
     footer{
+      
       box-shadow: 1px 2px 15px 5px rgba(0, 0, 0, 0.8);
-      font-size:15px;
+      font-size:20px;
       color:#C0C0C0;
       width:100%;
-      height:100px;
+      height:135px;
+      margin-top:20px;
       background-color:#000000;
-      margin-top:22.55rem;
       text-align: center;
-      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
     }
     #footer_link{
       color:#C0C0C0;
@@ -99,14 +103,15 @@
     color:#747474;
     }
     article{
+      margin-left:400px;
       margin-top:200px;
-      width:15%;
       height:30%;
       font-size:25px;
       margin-bottom:30px;
+
     }
-    article hr{
-    width:50%;
+    #hr_article{
+    width:30%;
     margin-left:auto;
     margin-right:auto;
     }
@@ -117,7 +122,21 @@ nav{
   background-color: black !important;
   z-index:7;
   }
+  #title_information{
+    margin-top:70px;
+    margin-left:30px;
+    border-bottom:2px solid;
+    width:170px;
+    font-size:xx-large;
+    text-align: center;
+    font-weight:900;
+  }
   
+  article hr{
+    width:60%;
+    margin:auto;
+    display:flex;
+  }
   nav img{
     min-height:120px;
     min-width:120px;
@@ -133,9 +152,7 @@ nav{
     color: #C0C0C0;
     transition: ease 0.2s;
   }
-  .row hr{
- display:none;
-  }
+
   #return{ 
     font-size:300px;
     text-decoration:none;
@@ -147,6 +164,11 @@ nav{
     border-bottom: 2px solid #C0C0C0; /* Добавлено слово "solid" для задания стиля рамки */
     border-radius: 5% / 10%;
   }
+  .footer-visitWeb{
+    font-weight:900;
+    font-size:20px;
+    color: #4578BD;
+  }
 
   @media only screen and (max-width: 600px){
     #return_from{ 
@@ -155,7 +177,7 @@ nav{
     footer{
       font-size:larger;
       margin-top:30px;
-      height:220px;
+      height:200px;
       
     }
     nav img {
@@ -163,14 +185,23 @@ nav{
     }
     .title{
       margin-left:0px;
-    
+      color:#193d6e;
     }
     form{
     margin-top:50px;
+    margin-left:0px;
+    background-color:white;
+    border:1px solid #193d6e;
+    }
+    label{
+      font-size:larger;
+      color:#4578BD;
     }
     article{
+      margin:0px;
       margin-top:200px;
       font-size:20px;
+    
     }
     article hr{
       width:70%;
@@ -186,14 +217,7 @@ nav{
       color:white;
       margin-left:70px;
     }
-    #title_information{
-      margin-top:70px;
-      margin-left:30px;
-      border-bottom:2px solid;
-      width:130px;
-      font-size:xx-large;
-      text-align: center;
-    }
+
     .row hr{
       margin-top:100px;
       width:300px;

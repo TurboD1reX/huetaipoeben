@@ -1,22 +1,43 @@
 
+*{
+  font-family: 'Oswald', sans-serif;
+border:1px solid;
+}
 label{
-  margin:10px;
+  font-size:22px;
+  color:#4578BD;
+  margin:5px;
 }
 
 input {
+  color:white;
   font-size:15px;
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
   border:1.5px solid #000000;
+  background-color:#474747;
   border-radius: 4px;
   box-sizing: border-box;
+  transition: ease 0.1s;
+}
+input:hover ,textarea:hover{
+  color:white;
+  border:2px solid #65a3fa;
+  transform: scale(0.9909);
+  transition: ease 0.1s;
+}
+.return_form{
+  display:none;
 }
 textarea{
+  color:white;
+  background-color:#474747;
   max-width:100%;
+  min-width:100%;
   min-height:100px;
-  max-height:150px;
+  max-height:100px;
   font-size:15px;
   width: 100%;
   padding: 12px 20px;
@@ -25,28 +46,29 @@ textarea{
   border:1.5px solid #000000;
   border-radius: 4px;
   box-sizing: border-box;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  transition: ease 0.1s;
+
 }
 .title{
-  margin:185px;
+  margin:175px;
   Font-size:40px;
-  color:#e9dada;
+  color:#193d6e;
 }
 form{
-  border-radius:0.8% 5%;
+  float:left;
+  border-radius:10%;
   font-weight: bolder;
-  position:absolute;
-  width:27%;
-  margin-top:4.5rem;
-  padding:30px;
-  height:30rem;
-  background-color:#cf3845;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
+  width:30%;
 
+  border:2px solid #193d6e;
+  padding:30px;
+  height:37em;
+
+}
 input[type=Submit],input[type=Reset]{
-  font-size:20px;
-  width: 49.5%;
+  font-size:25px;
+  font-weight:20px;
+  width: 49%;
   background-color: #242424;
   color: white;
   padding: 14px 20px;
@@ -58,27 +80,26 @@ input[type=Submit],input[type=Reset]{
 input[type=Submit]:hover,input[type=Reset]:hover{
   transition:ease 0.2s;
   transform:scale(0.95);
+  color:#39587D
 }
 
 input[type=email] {
 text-transform: lowercase;
 }
 input[type=email]:invalid {
-  z-index:80;
-  border: 1px solid rgb(204, 0, 0);
+  border: 2px solid rgb(170, 0, 0);
 }
- 
   footer{
+    position:absolute;
+    bottom:0;
     box-shadow: 1px 2px 15px 5px rgba(0, 0, 0, 0.8);
-    font-size:15px;
+    font-size:20px;
     color:#C0C0C0;
     width:100%;
-    height:100px;
+    height:135px;
+    margin-top:20px;
     background-color:#000000;
-    margin-top:42.55rem;
     text-align: center;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  
   }
   #footer_link{
     color:#C0C0C0;
@@ -86,23 +107,100 @@ input[type=email]:invalid {
     margin:20px;
   
   }
-  #footer_link:hover{
+  #footer_link:hover,#contact:hover{
   color:#747474;
   }
-  #content1 {
-  position: absolute;
-  top:9.5rem;
-  left:30rem;
-  z-index:6;
-  transform: translateX(-50%);
-  opacity: 0; 
-  animation: fallDown1 1s ease forwards;
+
+nav{
+width:100%;                                                                                 
+height:150px;
+box-shadow: 2px 2px 15px 10px rgba(0, 0, 0, 0.8);
+background-color: black !important;
+z-index:7;
+}
+nav img{
+  min-height:120px;
+  min-width:120px;
+  margin:130px;
+}
+#link_nav {
+  font-weight: 900;
+  margin: 70px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 35px;
+  color: #C0C0C0;
+  transition: ease 0.2s;
 }
 
-@keyframes fallDown1 {
-  to {
-      top: 16%; 
-      opacity: 1;
+#return{ 
+  font-size:300px;
+  text-decoration:none;
+  color:#C0C0C0;
+}
+#link_nav:hover {
+  transition: ease 0.2s;
+  color: #4578BD;
+  border-bottom: 2px solid #C0C0C0; /* Добавлено слово "solid" для задания стиля рамки */
+  border-radius: 5% / 10%;
+}
+.footer-visitWeb{
+  font-weight:900;
+  font-size:20px;
+  color: #4578BD;
+}
+.photo_main{
+width:70rem;
+height:35rem;
+
+}
+
+@media only screen and (max-width: 767px){
+  #return_from{ 
+    display:none;
+  }
+  footer{
+    font-size:larger;
+    margin-top:30px;
+    height:200px;
+    position:static;
+  }
+  nav img {
+    margin:0px;
+  }
+  .photo_main{
+
+    display:none;
+  }
+  .title{
+    margin:0px;
+    color:#193d6e;
+  }
+  form{
+  margin-top:150px;
+  margin-left:0px;
+  border:none;
+  }
+  input:hover ,textarea:hover{
+    color:white;
+    border:1px solid #65a3fa;
+    transform:none;
+
+  }
+
+  label{
+    font-size:larger;
+    color:#4578BD;
+  }
+  #footer_link{
+    margin:5px;
+  }
+  .return_form{
+    display:flex;
+    font-size:35px;
+    text-decoration: none;
+    color:white;
+    margin-left:70px;
   }
 }
-     
