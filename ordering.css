@@ -1,23 +1,26 @@
 
 *{
     font-family: 'Oswald', sans-serif;
-
+    margin:0;
+    padding:0;
+  }
+  body{
+    background-color:#e8e8e8;
   }
   label{
     font-size:larger;
-    color:#4578BD;
+    color:#193d6e;
     margin:5px;
   }
   
   input {
     color:white;
-    font-size:15px;
+    font-size:17px;
     width: 100%;
-    padding: 12px 20px;
+    padding: 10px 15px;
     margin: 8px 0;
-    display: inline-block;
-    border:1.5px solid #000000;
-    background-color:#474747;
+    border:1px solid #000000;
+    background-color:#ffffff;
     border-radius: 4px;
     box-sizing: border-box;
   }
@@ -26,11 +29,10 @@
   }
   textarea{
     color:white;
-    background-color:#474747;
     max-width:100%;
     min-width:100%;
-    min-height:45px;
-    max-height:45px;
+    min-height:49px;
+    max-height:49px;
     font-size:15px;
     width: 100%;
     padding: 12px 20px;
@@ -42,21 +44,19 @@
   
   }
   .title{
-    margin:230px;
+    margin:220px;
     Font-size:40px;
     color:#193d6e;
   }
   form{
-    border-radius:10%;
+    background-color:white;
     font-weight: bolder;
     width:100%;
     margin-top:1.1rem;
     margin-left:200px;
-    border:2px solid #193d6e;
     padding:30px;
     height:38em;
 
-    
   }
   input[type=Submit],input[type=Reset]{
     font-size:25px;
@@ -80,10 +80,9 @@
   text-transform: lowercase;
   }
   input[type=email]:invalid {
-    border: 2px solid rgb(170, 0, 0);
+    border:2px solid rgb(255, 0, 0);
   }
     footer{
-      
       box-shadow: 1px 2px 15px 5px rgba(0, 0, 0, 0.8);
       font-size:20px;
       color:#C0C0C0;
@@ -97,18 +96,16 @@
       color:#C0C0C0;
       cursor:pointer;
       margin:20px;
-    
     }
     #footer_link:hover,#contact:hover{
     color:#747474;
     }
     article{
       margin-left:400px;
-      margin-top:200px;
-      height:30%;
-      font-size:25px;
-      margin-bottom:30px;
 
+      height:30%;
+      font-size:1.4em;
+      margin-bottom:30px;
     }
     #hr_article{
     width:30%;
@@ -123,7 +120,7 @@ nav{
   z-index:7;
   }
   #title_information{
-    margin-top:70px;
+    margin-top:100px;
     margin-left:30px;
     border-bottom:2px solid;
     width:170px;
