@@ -6,7 +6,7 @@
   <meta name="description" content="KSM Label - muzyka spiewana przez glos sibi'ego oraz nalozyny na niego ai prod.@autystyczny">
   <meta name="keywords" content="Label,KSM , KSM Label, ksm, muzyka,ai,sztuczna inteligencja,artificial intelligence">
   <meta name="author" content="Egor Kryvoi">
-  <link rel="icon" type="image/png" href="photos/LOGO_ICON.png">
+  <link rel="icon" type="image/png" href="photos/KSM_LOGO_ICON.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -17,77 +17,93 @@
   <title>KSM Label | Contact </title>
 </head>
 <div class="container-fluid">
-<div class="row"><!--row--> <div class="container-fluid"><!--container-->
-  <div class="row"><!--row-->
-      <nav class="navbar navbar-dark  navbar-expand-md"><!--navbar-->
- <a href="index.html" class="navbar-brand"><img src="photos/KSM_LOGO_NAVBAR.png" class="d-inline-block mr-1 align-bottom" alt="" width="150px" height="150px"></a>
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-target="#navbar_main" aria-controls="navbar_main" aria-expanded="false" aria-label="Przełącznik nawigacji">
-      <span class="navbar-toggler-icon"></span>
-  </button>
-          <div class="collapse navbar-collapse" id="navbar_main">
-                  <ul class="navbar-nav mr-auto">
-                      <li class="nav-item" style="text-align: center;;">
-                      <a href="https://instagram.com/ksm.label?igshid=OGQ5ZDc2ODk2ZA=="  id="link_nav" >Instagram <i class="fa fa-instagram" style="font-size:25px"></i></a> 
-                      </li>
-                  </ul>
-                  <ul class="navbar-nav">
-                      <li class="nav-item">
-                      <a href="https://on.soundcloud.com/Ud1grQkiWXs1igxVA" id="link_nav">SoundCloud <i class="fa fa-soundcloud" style="font-size:25px"></i></a> 
-                      </li>
-                  </ul>
-                  <ul class="navbar-nav">
-                      <li class="nav-item">
-                      <a href="https://youtube.com/@KSMLABEL?si=FTqt5olVTABpWKnR" id="link_nav">Youtube <i class="fa fa-youtube-play" style="font-size:25px;"></i></a>
-                      </li>
-                  </ul>
-                  <ul class="navbar-nav">
-                      <li class="nav-item">
-                      <a href="twitter" id="link_nav">Twitter <i class="fa fa-twitter" style="font-size:25px;"></i></a>
-                      </li>
-                  </ul>
-          </div>
-      </nav>  <!--navbar-end-->  
+<div class="row"><!--row--> 
 
+<!--navbar--><nav class="navbar navbar-expand-lg navbar-dark bg-black">
+
+    <a class="navbar-brand" href="index.html" id="brand-img" ><img src="photos/KSM_LOGO_NAVBAR.png" class="d-inline-block align-bottom" alt="" width="150px" height="150px"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse bg-black" id="navbarNav" >
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+                        <a href="index.html" id="link_nav" >Home</a> 
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item social-media">
+                        <a id="link_nav">Social Media</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item artists">
+                        <a href="index.html"id="link_nav">News</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <a href="contact.html" id="link_nav">Contact</a> 
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <a href="support.html" id="link_nav">Support</a>
+                        </li>
+                    </ul>
+            </div>
+<!--navbar-end-->   </nav>  
      
-     </div>
-<div class="col-sm-3 col-md-4">
-  <form action="https://formsubmit.io/send/ksmlaabel@gmail.com" method="POST" id="content1">
-    <span class="title">Contact</span><br>
-      <label for="text" >Imie i Nazwisko:</label>
-        <input type="text" id="text" name="text" placeholder="Imie i Nazwisko">
-      <label for="email">Twój e-mail:</label>
+
+<div class="col-sm-3 col-md-4" >
+    <form action="https://formsubmit.io/send/kontakt@ksmlabel.pl" method="POST" >
+        <span class="title">Contact</span><br>
+        <label for="text">Imie i Nazwisko:</label>
+        <input type="text" id="text" name="text" placeholder="Wpisz imie i nazwisko">
+        <label for="email">Twój e-mail:</label>
         <input type="email" id="email" name="email" placeholder="Wpisz swój adres e-mail">
-      <label for="text">Tresc wiadomosci:</label><br> 
-        <textarea name="message" rows="5" cols="75" id="text_form" placeholder="Tresc wiadomosci"></textarea>
+        <label for="number">Numer Telefonu:</label>
+        <input type="number" id="number" name="number" placeholder="XXX-XXX-XXX">
+        <label for="text">Tresc do przeslania:</label><br> 
+        <input name="message" rows="5" cols="75" id="text_form" placeholder="Wpisz tresc">
         <input type="Reset" value="Cancel"></button>
         <input type="Submit"  value="Submit"></button>
-        <input name="_redirect" type="hidden" id="name" value="message.html">
-</form>
-<footer ><!--footer--><br>
-  <div class="col-sm-2 col-md-12 icons">
-      <div class="footer-link">
-          <a href="#" target="_blank">
-              <i class="fa fa-instagram"></i>
-          </a>
-      </div>
-      <div class="footer-link">
-          <a href="#" target="_blank">
-              <i class="fa fa-twitter" ></i>
-          </a>
-      </div>
-      <div class="footer-link">
-          <a href="#" target="_blank">
-              <i class="fa fa-soundcloud" style="font-size:50px;"></i>
-          </a>
-      </div>
-      <div class="footer-link">
-          <a href="#" target="_blank">
-              <i class="fa fa-youtube-play"></i>
-          </a>
-      </div>
+        <input name="_redirect" type="hidden" id="name" value="ty.html">
+    </form>
+</div>
+
+
+<img src="photos/linia3.png" class="line-contact" alt="">
+
+
+
+<footer><!--footer--><br>
+    <div class="col-sm-2 col-md-12 icons">
+        <div class="footer-link" data-toggle="tooltip" data-placement="bottom" title="Nasz Instagram">
+            <a href="#" target="_blank">
+                <i class="fa fa-instagram"></i>
+            </a>
+        </div>
+        <div class="footer-link" data-toggle="tooltip" data-placement="bottom" title="Nasz Twitter">
+            <a href="#" target="_blank" >
+                <i class="fa fa-twitter" ></i>
+            </a>
+        </div>
+        <div class="footer-link" data-toggle="tooltip" data-placement="bottom" title="Nasz SoundCloud">
+            <a href="#" target="_blank" >
+                <i class="fa fa-soundcloud" style="font-size:50px;"></i>
+            </a>
+        </div>
+        <div class="footer-link" data-toggle="tooltip" data-placement="bottom" title="Nasz Youtube">
+            <a href="#" target="_blank">
+                <i class="fa fa-youtube-play"></i>
+            </a>
+        </div>
+    </div>
+        <center>Powered by <a href="egorkryvoi.pl">egorkryvoi.pl</a></center>
+    </footer><!--footer-end-->
   </div>
-      <center>Powered by <a href="egorkryvoi.pl">egorkryvoi.pl</a></center>
-  </footer><!--footer-end-->
+  </div>
   <script src="script.js"></script>
 </body>
 </html>

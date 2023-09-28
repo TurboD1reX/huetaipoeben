@@ -20,7 +20,7 @@
 
 <div class="container-fluid"><!--container-->
     <div class="row"><!--row-->
-   <!--navbar--><nav class="navbar navbar-expand-lg navbar-dark bg-black">
+  <!--navbar--><nav class="navbar navbar-expand-lg navbar-dark bg-black">
 
     <a class="navbar-brand" href="index.html" id="brand-img" ><img src="photos/KSM_LOGO_NAVBAR.png" class="d-inline-block align-bottom" alt="" width="150px" height="150px"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,27 +29,7 @@
         <div class="collapse navbar-collapse bg-black" id="navbarNav" >
           <ul class="navbar-nav">
             <li class="nav-item active">
-                        <a href="index.html"  target="_blank" id="link_nav" >Home</a> 
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                        <a href="news.html" target="_blank" id="link_nav">News</a> 
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                        <a href="contact.html" target="_blank" id="link_nav">Contact</a> 
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav">
-                        <li class="nav-item artists">
-                        <a id="link_nav">Artists</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                        <a href="support.html"  target="_blank" id="link_nav">Support</a>
+                        <a href="index.html" id="link_nav" >Home</a> 
                         </li>
                     </ul>
                     <ul class="navbar-nav">
@@ -57,8 +37,23 @@
                         <a id="link_nav">Social Media</a>
                         </li>
                     </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item artists">
+                        <a id="link_nav">News</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <a href="contact.html" id="link_nav">Contact</a> 
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <a href="support.html" id="link_nav">Support</a>
+                        </li>
+                    </ul>
             </div>
-<!--navbar-end-->    </nav>  
+<!--navbar-end-->   </nav>
 <div class="col-sm-3 col-md-4" >
     <form action="https://formsubmit.io/send/kontakt@ksmlabel.pl" method="POST" >
         <span class="title">Order</span><br>
@@ -76,38 +71,41 @@
     </form>
 </div>
 <br><hr style="display: none;"><br>
-<article class="col-sm-3 col-md-4">
-    <div id="title_information">Informacje </div>
+<article class="col-sm-3 col-md-4 container-infomation">
+    <div class="logo-information"><i class="fa fa-info"></i></div>
+    <div id="title_information">Informacje</div>
+    
 <p>
     Wypełniając formularz obok, wiadomość zostanie przesłana na adres e-mail.
-    Koszt preorderu nie przekracza 24,99 zł ktore prosimy przelac na numer tel.<b style="font-size: larger; font-weight: 600;"> +48 693-770-162 / +48 575-327-539</b>, w miejsce tytulu przelewu wpisac Imie oraz Nazwisko. 
+    Koszt preorderu nie przekracza 19,99 zł ktore prosimy przelac na numer tel.<b style="font-size: larger; font-weight: 600;"> +48 693-770-162 / +48 575-327-539</b>, w miejsce tytulu przelewu wpisac Imie oraz Nazwisko. 
     W polu "Informacje Dodatkowe" mozna wpisac adres dostawy (kontaktowac sie przez <a href="https://instagram.com/ksm.label?igshid=OGQ5ZDc2ODk2ZA==" style="color:black;">Instagram</a>), w przeciwnym przypadku "-".
     Formularz służy także weryfikacji zgodności przelewu i danych wypelnionych w formularzu.
     Dokładamy wszelkich starań, aby zapewnić Państwu najlepszą obsługę.Liczymy na Państwa zrozumienie i pozostajemy do dyspozycji w razie pytań.
-    <hr>
-    <center>Dziękujemy za współpracę.</center></p>
+    <hr class="line-article">
+    <center class="article-center">Dziękujemy za współpracę.</center>
+</p>
 
         </article>
     </div><!--row-end-->
 </div><!--container-end-->
-<footer ><!--footer--><br>
+<footer><!--footer--><br>
     <div class="col-sm-2 col-md-12 icons">
-        <div class="footer-link">
+        <div class="footer-link" data-toggle="tooltip" data-placement="bottom" title="Nasz Instagram">
             <a href="#" target="_blank">
                 <i class="fa fa-instagram"></i>
             </a>
         </div>
-        <div class="footer-link">
-            <a href="#" target="_blank">
+        <div class="footer-link" data-toggle="tooltip" data-placement="bottom" title="Nasz Twitter">
+            <a href="#" target="_blank" >
                 <i class="fa fa-twitter" ></i>
             </a>
         </div>
-        <div class="footer-link">
-            <a href="#" target="_blank">
+        <div class="footer-link" data-toggle="tooltip" data-placement="bottom" title="Nasz SoundCloud">
+            <a href="#" target="_blank" >
                 <i class="fa fa-soundcloud" style="font-size:50px;"></i>
             </a>
         </div>
-        <div class="footer-link">
+        <div class="footer-link" data-toggle="tooltip" data-placement="bottom" title="Nasz Youtube">
             <a href="#" target="_blank">
                 <i class="fa fa-youtube-play"></i>
             </a>
