@@ -1,0 +1,393 @@
+*{
+    font-family: 'Oswald', sans-serif;
+  
+  }
+  
+  nav{
+  width:100%;                                                                                 
+  height:150px;
+  box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.8);
+  background-color: black !important;
+  z-index:7;
+  }
+  #link_nav {
+    font-weight: 900;
+    margin: 50px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 35px;
+    color: #C0C0C0;
+    transition: ease 0.2s;
+  }
+  #brand-img{
+    margin-left:130px;
+    margin-right:150px;
+  }
+  #link_nav:hover {
+    transition: ease 0.2s; 
+    color: #4578BD;
+  }
+  footer{
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+    height:250px;
+    font-size:20px;
+    color:#C0C0C0;
+    text-align: center;
+    background-color:#000000;
+    box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.8);
+    }
+    .icons{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .footer-link{
+      justify-content: center;
+      border-radius:5em;
+      height:78px;
+      width:78px;
+      background-color:black;
+      margin:0px 30px 30px 30px;
+      text-decoration:none;
+      color:white;
+      transition: ease 0.3s;
+    }
+    center a{
+      transition: ease 0.2s;
+      color:#838383;
+    } 
+    center a:hover{
+      transition: ease 0.2s;
+      color: #4578BD;
+    }
+    center{
+      color:#838383;
+      margin-top:-10px;
+      font-size:26px;
+    }
+    .icons i{
+      width:78px;height:78px;
+      text-decoration:none;
+      color:#838383;
+      margin-top:10px;
+      transition: ease 0.2s;
+      font-size:55px;
+    
+    }
+    .icons i:hover{
+      color:#ffffff;
+      transition: ease 0.2s;
+    }
+    .footer-link:hover{
+      box-shadow:0px 0px 30px 8px #4578BD;
+      background-color:#4578BD;
+      color:white;
+      transition: ease 0.3s;
+    }
+    #scrollBtn {
+        display:none;
+          height:55px;
+          width:55px;
+          align-items: center;
+          justify-content: center;
+          position: fixed;
+          bottom: 20px;
+          right: 30px;
+          z-index: 99;
+          border: none;
+          outline: none;
+          background-color: #586676;
+          color: rgb(255, 255, 255);
+          cursor: pointer;
+          padding: 15px;
+          border-radius: 1.5em;
+          font-size: 18px;
+          transition:ease 0.3s;
+        }
+        #scrollBtn:hover{
+          transition:ease 0.3s;
+          background-color:#4578BD;
+          box-shadow: 0px 0px 25px 0px #4578BD;
+        }
+
+.container-news-fluid{
+    margin-top:50px;
+
+}
+#line{
+    margin:auto;
+    width:90%;
+}
+.ksm-label{
+    margin-left:500px;
+height:auto;
+width:70%;
+margin-bottom:50px;
+
+    }
+.Sibi{
+    margin-top:-100px;
+    margin-left:100px;
+    height:auto;
+    width:70%;
+    margin-bottom:100px;
+}
+.mlody-wawrzyn{
+    margin-top:-100px;
+    margin-left:500px;
+    height:auto;
+    width:70%;
+    margin-bottom:100px;
+}
+    .ksm-label figcaption{
+margin-top:200px;
+margin-left:30px;
+font-size:40px;
+font-weight:700;
+text-transform:Uppercase;
+width:200px;
+text-align:center;
+border-bottom:6px solid #4578BD;
+    }
+    .Sibi figcaption{
+        margin-top:200px;
+        margin-left:480px;
+        font-size:40px;
+        font-weight:700;
+        text-transform:Uppercase;
+        width:270px;
+        text-align:center;
+        border-bottom:6px solid #4578BD;
+            }
+.mlody-wawrzyn figcaption{
+    margin-top:200px;
+    margin-left:10px;
+    font-size:40px;
+    font-weight:700;
+    text-transform:Uppercase;
+    width:500px;
+    text-align:center;
+    border-bottom:6px solid #4578BD;
+}
+.container-text-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .ksm-label img{
+        box-shadow:0px 0px 20px 2px #000000;
+border:4px solid;
+border-radius:3em;
+margin-left:30px;
+width:30em
+    }
+    .Sibi img{
+        box-shadow:0px 0px 20px 2px #000000;
+border:4px solid;
+border-radius:3em;
+
+margin-top:30px;
+width:35em;
+
+
+    }
+    .mlody-wawrzyn img{
+        box-shadow:0px 0px 20px 2px #000000;
+border:4px solid;
+border-radius:3em;
+margin-left:30px;
+width:30em;
+    }
+    .ksm-label p{
+        margin-right:20px;
+font-size:20px;
+margin-top:20px;
+    }
+    .Sibi p{
+        margin-left:50px;
+font-size:20px;
+margin-top:50px;
+    }
+    .mlody-wawrzyn p{
+        margin-right:20px;
+        font-size:20px;
+        margin-top:20px; 
+    }
+.title{
+    padding:250px;
+font-size:60px;
+color:#000000;
+font-weight:900;
+text-transform:uppercase;
+}
+
+
+.title button{
+    font-size:30px;
+    border-radius:30em;
+    background-color:#4578BD;
+    margin:0px;
+    border:none;
+    padding:5px 50px;
+    color:white;
+    font-weight:900;
+    transition:ease 0.2s;
+}
+.title button:hover{
+    transition:ease 0.2s;
+    transform:scale(0.95);
+    color:#a8a8a8;
+}
+    @media only screen and (max-width:767px){
+        #brand-img{
+            margin-left:0px;
+            margin-right:0px;
+            height:140px;
+          }
+          nav li{
+            margin:5px 0px 10px 0px;
+          }
+          .footer-link{
+            justify-content: center;
+            border-radius:5em;
+            height:78px;
+            width:78px;
+            background-color:black;
+            margin:0px 5px 5px 5px;
+            text-decoration:none;
+            color:white;
+            transition: ease 0.3s;
+          }
+          center a{
+            transition: ease 0.2s;
+            color:#838383;
+          } 
+          center a:hover{
+            transition: ease 0.2s;
+            color: #4578BD;
+          }
+          center{
+            color:#838383;
+            margin-top:-10px;
+            font-size:26px;
+          }
+          .icons i{
+            width:78px;height:78px;
+            text-decoration:none;
+            color:#838383;
+            margin-top:10px;
+            transition: ease 0.2s;
+            font-size:55px;
+          
+          }
+          .icons i:hover{
+            color:#ffffff;
+            transition: ease 0.2s;
+          }
+          .footer-link:hover{
+            box-shadow:0px 0px 15px 4px #4578BD;
+            background-color:#4578BD;
+            color:white;
+            transition: ease 0.3s;
+          }
+#scrollBtn {
+height:55px;
+width:55px;
+bottom: 10px;
+right: 15px;
+font-size: 18px;
+}
+footer {
+height:200px;   
+}
+.container-news-fluid{
+width:100%;      
+}
+.ksm-label{
+width:100%;
+margin-top:400px;
+margin-left:00px;
+margin-bottom:0px;
+}            
+.Sibi{
+margin-top:0px;
+width:100%;
+margin-bottom:0px;
+margin-left:0px;
+}
+.mlody-wawrzyn{
+margin-top:0px;
+margin-left:0px;
+width:100%;
+margin-bottom:0px;
+}
+.ksm-label figcaption{
+margin-top:0px;
+font-size:35px;
+margin-left:10px;
+width:170px;
+}
+.Sibi figcaption{
+margin-top:0px;
+margin-left:10px;
+font-size:35px;
+width:230px;
+}
+.mlody-wawrzyn figcaption{
+margin-top:0px;
+margin-left:0px;
+font-size:30px;
+width:100%;
+}
+.container-text-img{
+display:block;
+justify-content: center;
+align-items: center;
+}
+.ksm-label img{
+box-shadow:none;
+border-radius:3em;
+margin-left:0px;
+width:20em;
+margin-top:30px; 
+}
+.Sibi img{
+box-shadow:none;
+border-radius:3em;
+margin-top:30px; 
+margin-left:0px;
+width:20em;
+}
+.mlody-wawrzyn img{
+box-shadow:none;
+margin-left:0px;
+margin-top:30px; 
+margin-bottom:50px; 
+width:20em;
+}
+.ksm-label p{
+margin:0px;
+font-size:19px;
+margin-top:19px;
+}
+.Sibi p{
+margin-left:0px;
+font-size:19px;
+margin-top:19px;
+}
+.mlody-wawrzyn p{
+margin-right:0px;
+font-size:19px;
+margin-top:19px; 
+}
+.title{
+margin-top:230px;
+padding:0px;
+width:100%;
+text-align: center;
+font-size:36px;
+}
+    }

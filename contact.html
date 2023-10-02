@@ -37,8 +37,8 @@
                         </li>
                     </ul>
                     <ul class="navbar-nav">
-                        <li class="nav-item artists">
-                        <a href="index.html"id="link_nav">News</a>
+                        <li class="nav-item ">
+                        <a href="news.html"id="link_nav">News</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav">
@@ -56,16 +56,14 @@
      
 
 <div class="col-sm-3 col-md-4" >
-    <form action="https://formsubmit.io/send/kontakt@ksmlabel.pl" method="POST" >
+    <form action="contact.php" method="POST" >
         <span class="title">Contact</span><br>
         <label for="text">Imie i Nazwisko:</label>
-        <input type="text" id="text" name="text" placeholder="Wpisz imie i nazwisko">
+        <input type="text" id="text" name="FnameSname" placeholder="Wpisz imie i nazwisko">
         <label for="email">Twój e-mail:</label>
         <input type="email" id="email" name="email" placeholder="Wpisz swój adres e-mail">
-        <label for="number">Numer Telefonu:</label>
-        <input type="number" id="number" name="number" placeholder="XXX-XXX-XXX">
         <label for="text">Tresc do przeslania:</label><br> 
-        <input name="message" rows="5" cols="75" id="text_form" placeholder="Wpisz tresc">
+        <input type="text"  id="text_form" name="message" placeholder="Wpisz tresc">
         <input type="Reset" value="Cancel"></button>
         <input type="Submit"  value="Submit"></button>
         <input name="_redirect" type="hidden" id="name" value="ty.html">
@@ -104,7 +102,10 @@
     </footer><!--footer-end-->
   </div>
   </div>
-  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="script.js "></script>
 </body>
 </html>
 

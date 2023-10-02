@@ -254,7 +254,7 @@ margin-top:100px;
 }
 .news-box-container{
   width:100%;
-  height:83%;
+  height:50%;
   display: flex;
   justify-content: center; 
   align-items: center;
@@ -262,6 +262,7 @@ margin-top:100px;
 }
 .news-box p{
   margin-top:10px;
+  color:rgb(148, 148, 148)
 }
 .news-box{
 
@@ -300,10 +301,65 @@ margin-left:0.4em;
   color:white;
   border-radius:  30em;;
 }
-.news-date{
-  color:rgb(0, 108, 250);
-  text-decoration: underline;
+.shadow-box-news{
+  height:140px;
+  width:80%;
+  background-color:white;
+   box-shadow:0px -20px 70px 40px white;
+  position:absolute;
+  margin-top:-10px;
+  z-index: 40;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
+.shadow-box-news button{
+  font-size:30px;
+border:none;
+  width:200px;
+  font-weight:900;
+background-color:white;
+  border-radius:4em;
+}
+.shadow-box-news a{
+color:#4578BD;
+transition:ease 0.3s;
+}
+.shadow-box-news a:hover{
+  color:#112f5a;
+  transition:ease 0.3s;
+  }
+.shadow-box-phone-news{
+width:95%;
+box-shadow:0px -40px 70px 40px white;
+display:none;
+background-color:white;
+
+position:absolute;
+margin-left:-20px;
+margin-top:-100px;
+
+height:140px;
+}
+
+.shadow-box-phone-news a{
+  color:#4578BD;
+  transition:ease 0.3s;
+  }
+  .shadow-box-phone-news a:hover{
+    color:#112f5a;
+    transition:ease 0.3s;
+    }
+    .shadow-box-phone-news button{
+      font-size:25px;
+      margin-top:50px;
+      margin-left:76px;
+    border:none;
+      width:200px;
+      font-weight:900;
+    background-color:white;
+      border-radius:4em;
+    }
   @media only screen and (max-width: 1023px) {
     .title-news{
   margin-left:0em;
@@ -321,12 +377,14 @@ margin-left:0.4em;
     margin-left:0px;
     }
     section{
-    height:auto;
+    height:118em;
      
     }
     .box{
       margin:10px;
     }
+    .shadow-box-phone-news{display:inherit}
+    .shadow-box-news{display:none;}
     .container-tworcy{
         height:auto;
        display: flex;

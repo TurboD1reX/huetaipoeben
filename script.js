@@ -16,12 +16,17 @@ function topFunction() {
 
 
 var artists = document.querySelector('.artists');
-var  newsContainer= document.querySelector('.news-container');
+var downButton = document.getElementById('buttonDownNews')
+var  NewsKsmLabel= document.querySelector('.ksm-label');
 var socialMedia = document.querySelector('.social-media');
 var footer = document.querySelector('footer');
+var IndexNewsContainer = document.querySelector('.news-container');
 socialMedia.addEventListener('click', function() {
     footer.scrollIntoView({ behavior: 'smooth' });
 });
+downButton.addEventListener('click', function() {
+    NewsKsmLabel.scrollIntoView({ behavior: 'smooth' });
+})
 artists.addEventListener('click', function() {
-    newsContainer.scrollIntoView({ behavior: 'smooth' });
+    IndexNewsContainer.scrollIntoView({ behavior: 'smooth' });
 })
