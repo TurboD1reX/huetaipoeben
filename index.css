@@ -104,6 +104,49 @@ footer{
     right:2rem;
     
   }
+  .social-media-container{
+    height:20em;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:200px;
+    margin-bottom:20px;
+  }
+  .box-media1{margin:5px;}
+  .box-media2{margin:5px;}
+
+  .link-media{
+    font-size:80px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin:10px;
+    height:3.5em;
+    background-color: #657b96;
+    transition:ease 0.3s;
+  }
+  .link-media:hover{
+    transition:ease 0.3s;
+    transform: scale(0.96);
+    color:white;
+  }
+  .instagram:hover{
+  background: #f09433; 
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  
+  }
+  .youtube:hover{
+    background-color:#fd5949;
+  }
+  .twitter:hover{
+    background-color:#1990ff;
+  }
+  .soundcloud:hover{
+    background-color:#ff7700;
+  }
   article{
     height:30%;
     font-size:20px;
@@ -152,7 +195,7 @@ footer{
   }
   .product-info{
     margin-top:30px;
-    
+
   }
   #button{
     border:none;
@@ -172,7 +215,7 @@ footer{
   transform:scale(0.979999);
 }
 #scrollBtn {
-display:none;
+  display:none;
   height:55px;
   width:55px;
   align-items: center;
@@ -180,21 +223,26 @@ display:none;
   position: fixed;
   bottom: 20px;
   right: 30px;
-  z-index: 99;
-  border: none;
+  z-index: 10;
   outline: none;
-  background-color: #586676;
+  background-color: #657b96;
   color: rgb(255, 255, 255);
   cursor: pointer;
-  padding: 15px;
+  text-align:center;
+  padding: 18px;
   border-radius: 1.5em;
-  font-size: 18px;
+  font-size: 20px;
   transition:ease 0.3s;
+  animation:bottom-up ease 0.3s;
 }
 #scrollBtn:hover{
   transition:ease 0.3s;
   background-color:#4578BD;
   box-shadow: 0px 0px 25px 0px #4578BD;
+}
+@keyframes bottom-up{
+0%{bottom:-55px;transition:ease 0.3s;}
+100%{bottom:20px;transition:ease 0.3s;}
 }
 section {
   width: 100%;
@@ -246,31 +294,27 @@ section strong {
 
 .news-container{
   margin:auto;
-  width:80%; 
-
-margin-bottom:100px;
-margin-top:100px;
-
+  height:auto;
+  margin-bottom:100px;
+  margin-top:100px;
 }
 .news-box-container{
-  width:100%;
-  height:50%;
+  height:400px;
+  margin-top:30px;
   display: flex;
   justify-content: center; 
   align-items: center;
-
 }
 .news-box p{
-  margin-top:10px;
+  margin-top:25px;
   color:rgb(148, 148, 148)
 }
 .news-box{
-
-  height:100%;
+height:100%;
 margin:30px;
-padding: 20px 20px ;
 width:30%;
-border:2px solid rgb(192, 192, 192);
+padding: 20px 20px ;
+border:1px solid #c0c0c0;
 border-radius:20px;
 font-size:18px;
 
@@ -286,8 +330,8 @@ font-size:18px;
   text-transform: uppercase;
   width:100%;
   font-size:50px;
-  font-weight: 900;
-margin-left:0.4em;
+  font-weight: 200;
+  color:black;
 }
 .news-label{
   float:right;
@@ -301,90 +345,40 @@ margin-left:0.4em;
   color:white;
   border-radius:  30em;;
 }
-.shadow-box-news{
-  height:140px;
-  width:80%;
-  background-color:white;
-   box-shadow:0px -20px 70px 40px white;
-  position:absolute;
-  margin-top:-10px;
-  z-index: 40;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-}
-.shadow-box-news button{
-  font-size:30px;
-border:none;
-  width:200px;
-  font-weight:900;
-background-color:white;
-  border-radius:4em;
-}
-.shadow-box-news a{
-color:#4578BD;
-transition:ease 0.3s;
-}
-.shadow-box-news a:hover{
-  color:#112f5a;
-  transition:ease 0.3s;
-  }
-.shadow-box-phone-news{
-width:95%;
-box-shadow:0px -40px 70px 40px white;
-display:none;
-background-color:white;
+.look-more-news{
+  font-size:20px;
+  color:grey;
+  text-align:center;
+  text-decoration: none;
 
-position:absolute;
-margin-left:-20px;
-margin-top:-100px;
-
-height:140px;
 }
 
-.shadow-box-phone-news a{
-  color:#4578BD;
-  transition:ease 0.3s;
-  }
-  .shadow-box-phone-news a:hover{
-    color:#112f5a;
-    transition:ease 0.3s;
-    }
-    .shadow-box-phone-news button{
-      font-size:25px;
-      margin-top:50px;
-      margin-left:76px;
-    border:none;
-      width:200px;
-      font-weight:900;
-    background-color:white;
-      border-radius:4em;
-    }
   @media only screen and (max-width: 1023px) {
+    .box-media1,.box-media2{
+      width:100%;
+    }
+    .link-media{
+      width:100%;
+    }
     .title-news{
   margin-left:0em;
     }
-    .new-container{
-    width:100%;
-    }
     .news-box-container{
-    margin:-43px;
+      height:auto;
     display:block;
     }
     .news-box{
-    width:130%;
+    margin-top:0px;
     height:auto;
     margin-left:0px;
+    width:100%;
     }
     section{
     height:118em;
-     
     }
     .box{
       margin:10px;
     }
-    .shadow-box-phone-news{display:inherit}
-    .shadow-box-news{display:none;}
     .container-tworcy{
         height:auto;
        display: flex;
@@ -512,20 +506,28 @@ height:140px;
       }
       #scrollBtn {
         display:none;
-          height:55px;
-          width:55px;
-
-          align-items: center;
-          justify-content: center;
-          position: fixed;
-          bottom: 10px;
-          right: 15px;
-          background-color: #586676;
-          color: rgb(255, 255, 255);
-          cursor: pointer;
-          padding: 15px;
-          border-radius: 1.5em;
-          font-size: 18px;
-          transition:ease 0.3s;
-        }
+        height:55px;
+        width:55px;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 10;
+        outline: none;
+        background-color: #657b96;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        text-align:center;
+        padding: 18px;
+        border-radius: 1.5em;
+        font-size: 20px;
+        transition:ease 0.3s;
+        animation:bottom-up ease 0.4s;
+      }
+      #scrollBtn:hover{
+        transition:ease 0.3s;
+        background-color:#4578BD;
+        box-shadow: 0px 0px 25px 0px #4578BD;
+      }
   }

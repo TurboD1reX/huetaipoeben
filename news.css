@@ -86,6 +86,50 @@
       background-color:#4578BD;
       color:white;
       transition: ease 0.3s;
+      
+    }
+    .social-media-container{
+      height:20em;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      margin-top:200px;
+      margin-bottom:20px;
+    }
+    .box-media1{margin:5px;}
+    .box-media2{margin:5px;}
+  
+    .link-media{
+      font-size:80px;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      margin:10px;
+      height:3.5em;
+      background-color: #657b96;
+      transition:ease 0.3s;
+    }
+    .link-media:hover{
+      transition:ease 0.3s;
+      transform: scale(0.96);
+      color:white;
+    }
+    .instagram:hover{
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    
+    }
+    .youtube:hover{
+      background-color:#fd5949;
+    }
+    .twitter:hover{
+      background-color:#1990ff;
+    }
+    .soundcloud:hover{
+      background-color:#ff7700;
     }
     #scrollBtn {
         display:none;
@@ -117,107 +161,29 @@
     margin-top:50px;
 
 }
-#line{
-    margin:auto;
-    width:90%;
+.container-box-news{
+  display:flex;
+  justify-items: center;
+  align-items: center;
+  margin:auto;
 }
-.ksm-label{
-    margin-left:500px;
-height:auto;
-width:70%;
-margin-bottom:50px;
-
-    }
-.Sibi{
-    margin-top:-100px;
-    margin-left:100px;
-    height:auto;
-    width:70%;
-    margin-bottom:100px;
+.box-news p {
+  margin-top:20px;
 }
-.mlody-wawrzyn{
-    margin-top:-100px;
-    margin-left:500px;
-    height:auto;
-    width:70%;
-    margin-bottom:100px;
+.box-news{
+  font-size:20px;
+  margin:auto;
+  margin-bottom:100px;
+  padding:20px;
+  border:1px solid #c0c0c0;
+  border-radius:0.5em;
 }
-    .ksm-label figcaption{
-margin-top:200px;
-margin-left:30px;
-font-size:40px;
-font-weight:700;
-text-transform:Uppercase;
-width:200px;
-text-align:center;
-border-bottom:6px solid #4578BD;
-    }
-    .Sibi figcaption{
-        margin-top:200px;
-        margin-left:480px;
-        font-size:40px;
-        font-weight:700;
-        text-transform:Uppercase;
-        width:270px;
-        text-align:center;
-        border-bottom:6px solid #4578BD;
-            }
-.mlody-wawrzyn figcaption{
-    margin-top:200px;
-    margin-left:10px;
-    font-size:40px;
-    font-weight:700;
-    text-transform:Uppercase;
-    width:500px;
-    text-align:center;
-    border-bottom:6px solid #4578BD;
+figcaption{
+  font-weight:600;
+  text-transform: uppercase;
+  font-size:30px;
 }
-.container-text-img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-    .ksm-label img{
-        box-shadow:0px 0px 20px 2px #000000;
-border:4px solid;
-border-radius:3em;
-margin-left:30px;
-width:30em
-    }
-    .Sibi img{
-        box-shadow:0px 0px 20px 2px #000000;
-border:4px solid;
-border-radius:3em;
-
-margin-top:30px;
-width:35em;
-
-
-    }
-    .mlody-wawrzyn img{
-        box-shadow:0px 0px 20px 2px #000000;
-border:4px solid;
-border-radius:3em;
-margin-left:30px;
-width:30em;
-    }
-    .ksm-label p{
-        margin-right:20px;
-font-size:20px;
-margin-top:20px;
-    }
-    .Sibi p{
-        margin-left:50px;
-font-size:20px;
-margin-top:50px;
-    }
-    .mlody-wawrzyn p{
-        margin-right:20px;
-        font-size:20px;
-        margin-top:20px; 
-    }
 .title{
-    padding:250px;
 font-size:60px;
 color:#000000;
 font-weight:900;

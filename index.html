@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="index.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Exo+2:wght@600&family=Oswald:wght@400;500;700&family=Rubik:wght@600&family=Teko:wght@300;400;500;600;700&family=Timmana&family=Titan+One&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cinzel:wght@400;500;600;700;800;900&family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,1000;1,9..40,100;1,9..40,400;1,9..40,600;1,9..40,700;1,9..40,800&family=Exo+2:wght@600&family=Kanit:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&family=Rubik:wght@600&family=Teko:wght@300;400;500;600;700&family=Timmana&family=Titan+One&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
     <title>KSM Label | Store</title>
 </head>
 <body>
@@ -40,13 +40,13 @@
                                 </li>
                             </ul>
                             <ul class="navbar-nav">
-                                <li class="nav-item social-media">
-                                <a id="link_nav">Media Spoleczne</a>
+                                <li class="nav-item media-link">
+                                <a onclick="socialMedia()" id="link_nav">Media Społeczne</a>
                                 </li>
                             </ul>
                             <ul class="navbar-nav">
-                                <li class="nav-item artists">
-                                <a id="link_nav">Nowosci</a>
+                                <li class="nav-item news-link">
+                                <a href="news.html" id="link_nav">Nowości</a>
                                 </li>
                             </ul>
                             <ul class="navbar-nav">
@@ -61,8 +61,22 @@
                             </ul>
                     </div>
 <!--navbar-end-->   </nav>  
-<button id="scrollBtn" onclick="topFunction()" ><i class="fa fa-arrow-up"></i></button>
-<!--preorder--><div class="col-sm-12 col-md-8" id="container_preorder" >
+<i class="fa fa-arrow-up" id="scrollBtn" onclick="topFunction()"></i>
+
+<!--social-media--><div class="social-media-container" style="display:none;">
+
+<div class="box-media1 col-sm-12 col-md-4">
+<div class="link-media col-sm-12 col-md-12 instagram" data-toggle="tooltip" data-placement="bottom" title="Nasz Instagram"><i class="fa fa-instagram"></i></div>
+<div class="link-media col-sm-12 col-md-12 twitter" data-toggle="tooltip" data-placement="bottom" title="Nasz Twitter"><i class="fa fa-twitter"></i></div>
+</div>
+<div class="box-media2 col-sm-12 col-md-4">
+<div class="link-media col-sm-12 col-md-12 youtube" data-toggle="tooltip" data-placement="bottom" title="Nasz Youtube"><i class="fa fa-youtube-play"></i></div>
+<div class="link-media col-sm-12 col-md-12 soundcloud" data-toggle="tooltip" data-placement="bottom" title="Nasz SoundCloud"><i class="fa fa-soundcloud"></i></div>
+</div>
+
+<!--social-media-end--></div>
+
+<!--preorder--><div class="col-sm-12 col-md-8" id="container_preorder">
     <img src="photos/OKLADKA_PLYTY2.jpeg"  class="preorder_img">
             <div class="title_preorder"><b >JESTEM NAJLEPSZY -  Sibi & AI </b></div>
             <div class="col-sm-3 col-md-8">
@@ -75,7 +89,7 @@
                 </div>
                 <a href="ordering.html"><button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Zamow płyte" id="button">Zamów płyte</button></a>
 
- <!--preorder-end--></div>
+ <!--preorder-end--></div> 
 
  <hr style="margin-top:240px;width:90%;margin-left:auto;margin-right:auto;"><br>
  
@@ -124,39 +138,40 @@
         </div>
     </section>
 
-<div class="news-container col-sm-4 col-md-8 ">
-    <strong class="title-news">Nowosci</strong>
-    <br><br>
-
-    <div class="news-box-container">
-
-        <div class="col-sm-3  news-box">
-            <strong>Ksm Label <div class="news-label">News</div></strong>
+<div class="news-container col-sm-3 col-md-10 ">
+<center class="title-news">Nowości </center>
+<br>
+<div class="news-box-container">
+        <div class="col-sm-12 col-md-5 news-box">
+            <strong><div class="news-label">NEW</div>Album Młodego Wawrzyna</strong>
             <p> 
-To rewelacyjna wiadomość! Nasz label, KSM Label, oficjalnie rozpoczął swoją działalność 20 sierpnia, a premierą pierwszego albumu będzie właśnie debiutancki krążek artysty o pseudonimie sibiego.
-Już niedługo możemy spodziewać się premiery pierwszego albumu młodego Wawrzyna, artysty związanego z wytwórnią muzyczną KSM Label. Po długim oczekiwaniu, fani będą mieli okazję usłyszeć nowe brzmienia od tego utalentowanego artysty.
+            KSM LABEL to niezależny kolektyw który powstał 20/08/2023r. W wyniku połączenia pasji, chęci iścia za trendami jak i prawdziwej zajawki. W dyskografi zdążył się znaleźć już jeden krążek zrobiony za pomocą "AI". Podpisano też nowych artystów, którzy będą wydawać swoją muzykę pod brendem wytwórni - Wkrótce będą oni oficjalnie ogłoszeni.
             </p>
-            <div class="shadow-box-phone-news"><button><a href="news.html">Learn More</a></button></div>
-        </div>
-        <div class="col-sm-3  news-box">
+            <br>
+            <div class="date-news">20/09/23</div>
+            </div>
+        <div class="col-sm-12 col-md-5 news-box">
             <strong><div class="news-label">NEW</div>Album sibiego </strong>
             <p>
                 What is Lorem Ipsum?
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing.
-                <div class="shadow-box-phone-news"><button><a href="news.html">Learn More</a></button></div>
             </p>
+            <br>
+            <div class="date-news">23/09/23</div>
         </div>
-        <div class="col-sm-3  news-box">
-            <strong><div class="news-label">NEW</div>Album Młodego Wawrzyna</strong>
+        <div class="col-sm-12 col-md-5 news-box">
+            <strong>Ksm Label <div class="news-label">News</div></strong>
             <p>
                 What is Lorem Ipsum?
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing.
             </p>
-            <div class="shadow-box-phone-news"><button><a href="news.html">Learn More</a></button></div>
+            <br>
+            <div class="date-news">03/10/23</div>
         </div>
 
     </div>
-    <div class="shadow-box-news"><button><a href="news.html">Zobacz wiecej</a></button></div>
+    <br>
+    <center class="look-more-news"><a href="news.html">Zobacz więcej</a></center>
 </div>
 
 
@@ -182,6 +197,7 @@ Już niedługo możemy spodziewać się premiery pierwszego albumu młodego Wawr
                         <i class="fa fa-youtube-play"></i>
                     </a>
                 </div>
+
             </div>
                 <center>Powered by <a href="egorkryvoi.pl">egorkryvoi.pl</a></center>
 <!--footer-end--> </footer>
