@@ -28,42 +28,52 @@
         <div class="collapse navbar-collapse bg-black" id="navbarNav" >
           <ul class="navbar-nav">
             <li class="nav-item active">
-                        <a href="index.html" id="link_nav" >Home</a> 
-                        </li>
-                    </ul>
+                        <a href="contact.html" id="link_nav" >Home</a> 
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item social-media">
+                        <a onclick="socialMedia()" id="link_nav">Media Społeczne</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a href="store.html" id="link_nav">Sklep</a>
+                    </li>
+                </ul>
                     <ul class="navbar-nav">
-                        <li class="nav-item social-media">
-                        <a id="link_nav">Media Społeczne</a>
+                        <li class="nav-item news-link">
+                        <a href="news.html" id="link_nav">Nowości</a>
                         </li>
-                    </ul>
-                    <ul class="navbar-nav">
-                        <li class="nav-item media-link">
-                            <a onclick="socialMedia()" id="link_nav">Media Społeczne</a>
-                            </li>
                     </ul>
                     <ul class="navbar-nav">
                         <li class="nav-item">
                         <a href="contact.html" id="link_nav">Kontakt</a> 
                         </li>
                     </ul>
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                        <a href="support.html" id="link_nav">Pomoc</a>
-                        </li>
-                    </ul>
             </div>
-<!--navbar-end-->   </nav>  
-     
+<!--navbar-end-->   </nav> 
+     <!--social-media--><div class="social-media-container">
+
+<div class="box-media1 col-sm-12 col-md-4">
+    <a class="link-media col-sm-12 col-md-12 instagram" data-toggle="tooltip" data-placement="bottom" title="Nasz Instagram" href="https://instagram.com/ksm.label/"><i class="fa fa-instagram"></i></a>
+    <a class="link-media col-sm-12 col-md-12 twitter" data-toggle="tooltip" data-placement="bottom" title="Nasz Twitter" href="support.html"><i class="fa fa-twitter"></i></a>
+    </div>
+    <div class="box-media2 col-sm-12 col-md-4">
+    <a class="link-media col-sm-12 col-md-12 youtube" data-toggle="tooltip" data-placement="bottom" title="Nasz Youtube" href="https://www.youtube.com/@KSMLABEL/"><i class="fa fa-youtube-play"></i></a>
+    <a class="link-media col-sm-12 col-md-12 soundcloud" data-toggle="tooltip" data-placement="bottom" title="Nasz SoundCloud" href="https://on.soundcloud.com/5gyo7qReni6gRnUJ7"><i class="fa fa-soundcloud"></i></a>
+    </div>
+<!--social-media-end--></div>
 
 <div class="col-sm-3 col-md-4" >
-    <form action="contact.php" method="POST" >
+    <form action="" method="POST" >
         <span class="title">Contact</span><br>
         <label for="text">Imie i Nazwisko:</label>
-        <input type="text" id="text" name="FnameSname" placeholder="Wpisz imie i nazwisko">
+        <input type="text" id="text" name="imie" placeholder="Imie & Nazwisko">
         <label for="email">Twój e-mail:</label>
         <input type="email" id="email" name="email" placeholder="Wpisz swój adres e-mail">
-        <label for="text">Treść do przesłania:</label><br> 
-        <input type="text"  id="text_form" name="message" placeholder="Wpisz treść">
+        <label for="text">Wiadomość do przesłania:</label><br> 
+        <input type="text"  id="text_form" name="message" placeholder="Treść wiadomości">
         <input type="Reset" value="Cancel"></button>
         <input type="Submit"  value="Submit"></button>
         <input name="_redirect" type="hidden" id="name" value="ty.html">
