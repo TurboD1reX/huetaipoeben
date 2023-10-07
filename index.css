@@ -316,14 +316,53 @@ font-size:18px;
 
 }
 
+.message-alert {
+  display: flex;
+  position: fixed;
+  width: 0;
+  margin-top: 35em;
+  z-index: 5;
+  left: 0;
+  background-color: #3498db; /* Синий цвет для предупреждения */
+  height: 5em;
+  padding:0px;
+  font-weight: 900;
+  text-align: center;
+  color: white; /* Белый текст для контраста */
+  overflow: hidden;
+  transition: ease 0.4s;
+  font-size: 23px;
+}
+
+.message-text {
+  margin:20px 20px 0px 40px;
+  white-space: nowrap; /* Текст не будет переноситься */
+}
+
+.close-button {
+  cursor: pointer;
+  font-size: 40px;
+  text-decoration: none;
+}
+
   @media only screen and (max-width: 1023px) {
+    .message-alert {
+      margin-top: 31em;
+    }
     .social-media-container{
-margin-left:-10px;
-    }
-    .box-media1,.box-media2{
-     
-      width:100%;
-    }
+      margin-top:50px;
+      margin-left:-10px;
+      height:auto;
+      margin-bottom:50px;
+          }
+          .box-media1,.box-media2{
+
+            width:100%;
+          }
+          .link-media{
+            height:2.75em;
+            width:100%;
+          }
     .link-media{
       width:100%;
     }
