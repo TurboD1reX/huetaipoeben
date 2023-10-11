@@ -323,12 +323,12 @@ font-size:18px;
   margin-top: 35em;
   z-index: 5;
   left: 0;
-  background-color: #3498db; /* Синий цвет для предупреждения */
+  background-color: #3498db;
   height: 5em;
   padding:0px;
   font-weight: 900;
   text-align: center;
-  color: white; /* Белый текст для контраста */
+  color: white;
   overflow: hidden;
   transition: ease 0.4s;
   font-size: 23px;
@@ -336,7 +336,7 @@ font-size:18px;
 
 .message-text {
   margin:20px 20px 0px 40px;
-  white-space: nowrap; /* Текст не будет переноситься */
+  white-space: nowrap;
 }
 
 .close-button {
@@ -344,6 +344,35 @@ font-size:18px;
   font-size: 40px;
   text-decoration: none;
 }
+.Egor,.Maks{
+  transition:ease 0.7s;
+  animation:right 0.7s;
+
+}
+.Stasiek,.Alicja{
+  transition:ease 0.7s;
+  animation:left 0.7s;
+}
+@keyframes right{
+ 0% {
+
+    transform:translateX(500%);
+  }
+  100% {
+
+    transform:translateX(0%);
+  }
+}
+@keyframes left{
+  0% {
+ 
+     transform:translateX(-500%);
+   }
+   100% {
+ 
+     transform:translateX(0%);
+   }
+ }
 
   @media only screen and (max-width: 1023px) {
     .message-alert {
