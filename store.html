@@ -59,6 +59,11 @@
                         <a href="contact.html" id="link_nav">Kontakt</a> 
                         </li>
                     </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <i class="fa fa-shopping-basket backet-nav" onclick="incShopBar()" style="font-size:50px"></i>
+                        </li>
+                    </ul>
             </div>
 <!--navbar-end-->   </nav> 
 <i class="fa fa-arrow-up" id="scrollBtn" onclick="topFunction()"></i>
@@ -75,6 +80,33 @@
 </div>
 
 <!--social-media-end--></div>
+
+<!--basket-shop--><div class="shop-basket col-sm-12 col-md-3">
+    <b class="close-button" onclick="decShopBar()">&times;</b>
+<!--sibi--><div class="Sibi basket-box col-sm-12">
+    <img src="photos/sibi/OKLADKA_PLYTY2.jpeg" class="img-basket-bar">
+    <div class="title-product">Sibi - "JESTEM NAJLEPSZY" prod.@autystyczny</div>
+    <div class="product-price">19.99</div>
+    <div class="amount-container">
+        <span >Ilość</span><div class="amount">1</div><i class="fa fa-plus-square" onclick="addAmount()"></i><i class="fa fa-minus-square" onclick="MinAmount()"></i>
+    </div>
+    <div class="product-text">Płyta wykonawcy "Sibi" wyprodukowana przez @autystycznego głównie przy użyciu sztucznej inteligencji.</div>
+    <button class="shop-bar-button" data-toggle="tooltip" data-placement="bottom" title="Zamówić płyte" >Zamów</button>
+    
+    
+<!--sibi-end--></div>
+<!--młody-wawrzyn--><div class="Wawrzyn basket-box col-sm-11" style="display:none;">
+    <img src="photos/sibi/OKLADKA_PLYTY2.jpeg" class="img-basket-bar">
+    <div class="title-product">Młody Wawrzyn - prod.@autystyczny</div>
+    <div class="product-text"></div>
+    <div class="amount-container">
+        <span class="product-price">17,99</span><span>Ilość</span><div class="amount"value="11"></div><i class="fa fa-plus-square"></i>
+    </div>    
+
+<!--młody-wawrzyn-end--></div>
+
+<!--basket-shop-end--></div>
+
 <!--preorder--><div class="col-sm-12 col-md-8 container_preorder" >
     <img src="photos/sibi/OKLADKA_PLYTY2.jpeg"  class="preorder_img">
             <div class="title_preorder"><b >JESTEM NAJLEPSZY -  Sibi & AI </b></div>
@@ -83,11 +115,10 @@
                     <p><strong>Koszt płyty:</strong> <strong>19,99zł</strong></p>
                     <p><strong>Producent:</strong> <strong>@autystyczny</strong></p>
                     <p><strong>Kod produktu:</strong> <strong>KSM001</strong></p>
-                    <p><strong>Dostepność:</strong> <strong>Niedostępne</strong></p>
+                    <p><strong>Dostepność:</strong> <strong class="limited">Ostatnie Sztuki!</strong></p>
                   </div>
                 </div>
-                <a href="ordering.html"><button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Zamow płyte" id="button">Zamów płyte</button></a>
-
+                <button onclick="incShopBar()" type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Zamow płyte" id="button">Dodaj do koszyka <i class="fa fa-shopping-basket"style="30px;"></i></button>
  <!--preorder-end--></div> 
  <hr style="margin-top:240px;width:90%;margin-left:auto;margin-right:auto;display:none;"><br>
 

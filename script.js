@@ -1,8 +1,8 @@
 
-const buttonDownNews = document.getElementById('buttonDownNews');
+var buttonDownNews = document.getElementById('buttonDownNews');
 const aktualne = document.querySelector('.aktualne')
 
-buttonDownNews.onclick =  function() {
+buttonDownNews =  function() {
   aktualne.scrollIntoView({ behavior: 'smooth' });
 };
 
@@ -19,22 +19,60 @@ function scrollFunction() {
 
 function incMessage() {
   const messageAlert = document.querySelector('.message-alert');
-  messageAlert.style.width = "350px";
-  messageAlert.querySelector('.message-text').style.display = "flex";
+
+ messageAlert.style.transform = "translateX(0%)";
 }
 
 function decMessage() {
   const messageAlert = document.querySelector('.message-alert');
-  messageAlert.style.width = "0px";
-  messageAlert.querySelector('.message-text').style.display = "none";
+  messageAlert.style.transform = "translateX(-100%)";
 }
 
 
 
+
+
+
+
+
+function decShopBar(){
+  const shopBar = document.querySelector('.shop-basket');
+  shopBar.style.transform = "translateX(100%)";
+}
+function incShopBar(){
+  const shopBar = document.querySelector('.shop-basket');
+  shopBar.style.transform = "translateX(0%)";
+}
+
+
+
+
+
+
+var amountElement = document.querySelector(".amount"); 
+var currentValue = parseInt(amountElement.textContent);
+var Cena = document.querySelector(".product-price");
+var currentCena = parseFloat(Cena.textContent);  
+
+function addAmount() {
+currentValue++;
+amountElement.textContent = currentValue;
+currentCena = currentCena+19.99;
+Cena.textContent = currentCena.toFixed(2);
+
+}
+function MinAmount() {
+if (currentValue > 0) {
+currentValue --;
+amountElement.textContent = currentValue;
+currentCena = currentCena-19.99;
+Cena.textContent = currentCena.toFixed(2);
+}
+}
+
 function topFunction() {
   document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0; 
-  
+  document.documentElement.scrollTop = 0;
 }
 function socialMedia() {
 let mediaContainer = document.querySelector('.social-media-container');
@@ -42,6 +80,8 @@ let titleNews = document.querySelector('.title');
     mediaContainer.style.display = "flex";
     titleNews.style.display = "none";
   }
+
+
   function delivery() {
     const deliveryAddress = document.querySelector(".delivery-address");
     const checkbox = document.getElementById("checkbox");
@@ -52,29 +92,6 @@ let titleNews = document.querySelector('.title');
       deliveryAddress.style.display = "none";
     }
   }
-
-
-const slider = document.querySelector('.slider');
-const images = document.querySelectorAll('.slider img');
-let currentIndex = 0;
-
-function nextSlide() {
-    currentIndex = (currentIndex + 1) % images.length;
-    updateSlider();
-}
-
-function updateSlider() {
-    const translateX = -currentIndex * 100;
-    slider.style.transform = `translateX(${translateX}%)`;
-}
-
-// Change slide every 3 seconds (3000 milliseconds)
-setInterval(nextSlide, 3000);
-
-// Initial slide
-updateSlider();
-
-
 
 
 

@@ -132,6 +132,19 @@ footer{
     transform: scale(0.96);
     color:white;
   }
+  .instagram{
+    animation:left 1s;
+  }
+  .youtube{
+    animation:right 1.4s;
+  }
+  .soundcloud{
+    animation:right 0.9s;
+  }
+  .twitter{
+    transition:ease 0.7s;
+    animation:left 0.5s;
+  }
   .instagram:hover{
   background: #f09433; 
   background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
@@ -319,19 +332,19 @@ font-size:18px;
 .message-alert {
   display: flex;
   position: fixed;
-  width: 0;
-  margin-top: 35em;
+  width: 350px;
+  margin-top: 31.5em;
   z-index: 5;
   left: 0;
   background-color: #3498db;
   height: 5em;
-  padding:0px;
   font-weight: 900;
   text-align: center;
   color: white;
   overflow: hidden;
   transition: ease 0.4s;
   font-size: 23px;
+  transform:translateX(-100%);
 }
 
 .message-text {
@@ -344,22 +357,23 @@ font-size:18px;
   font-size: 40px;
   text-decoration: none;
 }
-.Egor,.Maks{
-  transition:ease 0.7s;
-  animation:right 0.7s;
-
+.Maks{
+  animation:left 1.4s;
 }
-.Stasiek,.Alicja{
-  transition:ease 0.7s;
+.Egor{
+  animation:left 1.2s;
+}
+.Alicja{
   animation:left 0.7s;
+}
+.Stasiek{
+  animation:left 0.5s;
 }
 @keyframes right{
  0% {
-
-    transform:translateX(500%);
+    transform:translateX(100%);
   }
   100% {
-
     transform:translateX(0%);
   }
 }
