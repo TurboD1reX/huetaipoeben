@@ -209,6 +209,10 @@ footer{
   background-color:#4578BD;
   box-shadow: 0px 0px 25px 0px #4578BD;
 }
+@keyframes up-bottom{
+  0%{bottom:20px;transition:ease 0.3s;}
+  100%{bottom:-55px;transition:ease 0.3s;}
+  }
 @keyframes bottom-up{
 0%{bottom:-55px;transition:ease 0.3s;}
 100%{bottom:20px;transition:ease 0.3s;}

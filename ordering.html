@@ -73,25 +73,25 @@
   </div>
   
 <div class="col-sm-3 col-md-4" >
-    <form action="https://formsubmit.io/send/kontakt@ksmlabel.pl" method="POST" >
+    <form action="php/zamowienie.php" method="POST" >
         <center class="title">Zamówienie</center><br>
          
         
         <div class="name-surname">
         <div class="name">
             <label for="text">Imie:</label> 
-            <input type="text" id="text" name="imie" placeholder="Imie">
+            <input type="text" id="text" name="imie" placeholder="Wpisz swoje imie">
         </div>
         <div class="surname">
         <label for="text" id="surname">Nazwisko:</label>
-        <input type="text" id="text" name="nazwisko" placeholder="Nazwisko">
+        <input type="text" id="text" name="nazwisko" placeholder="Wpisz swoje nazwisko">
         </div>
         </div>
 
         <label for="email">Twój e-mail:</label>
         <input type="email" id="email" name="email" placeholder="Wpisz swój adres e-mail">
         <label for="number">Numer Telefonu:</label>
-        <input type="number" id="number" name="number" placeholder="XXX-XXX-XXX">
+        <input type="number" id="number" name="number" placeholder="Wpisz swój numer telefonu">
 
         <div class="delivery">
         <input type="checkbox" id="checkbox" onchange="delivery()">
@@ -100,12 +100,11 @@
 
         <div class="delivery-address" style="display:none">
         <label for="text">Adres Dostawy:</label><br> 
-        <input type="text" id="text" name="text" placeholder="Adres Dostawy">
+        <input type="text" id="text" name="text" placeholder="Wpisz swój adres dostawy">
         </div>
 
         <input type="Reset" value="Cancel"></button>
         <input type="Submit"  value="Submit"></button>
-        <input name="_redirect" type="hidden" id="name" value="ty.html">
     </form>
 </div>
 
@@ -113,7 +112,7 @@
     <div class="logo-information"><i class="fa fa-info"></i></div>
     <div id="title_information">Informacje</div>
     
-<p>
+<p class="info-content">
     Wypełniając formularz obok, wiadomość zostanie przesłana na adres e-mail.
     Koszt preorderu nie przekracza 19,99 zł ktore prosimy przelac na numer tel.<b style="font-size: larger; font-weight: 600;"> +48 693-770-162 / +48 575-327-539</b>, w miejsce tytulu przelewu wpisac Imie oraz Nazwisko. 
     W polu "Informacje Dodatkowe" mozna wpisac adres dostawy (kontaktowac sie przez <a href="https://instagram.com/ksm.label?igshid=OGQ5ZDc2ODk2ZA==" style="color:black;">Instagram</a>), w przeciwnym przypadku "-".

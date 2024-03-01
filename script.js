@@ -12,6 +12,7 @@ function scrollFunction() {
   if (document.body.scrollTop > 220 || document.documentElement.scrollTop > 220) {
     scrollBtn.style.display = "block";
   } else {
+
     scrollBtn.style.display = "none";
   }
 }
@@ -62,7 +63,7 @@ Cena.textContent = currentCena.toFixed(2);
 
 }
 function MinAmount() {
-if (currentValue > 0) {
+if (currentValue > 1) {
 currentValue --;
 amountElement.textContent = currentValue;
 currentCena = currentCena-19.99;
