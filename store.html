@@ -78,6 +78,53 @@
 
 <!--basket-shop--><div class="shop-basket col-sm-12 col-md-3" >
     <b class="close-button" onclick="decShopBar()">&times;</b>
+
+<div class="product-shop-basket col-sm-12 col-md-8"></div>
+    <div class="form-basket col-sm-12 col-md-8" style="display:none;">
+        <div class="col-sm-3 col-md-4" >
+            <form action="php/zamowienie.php" method="POST" >
+                <center class="title">Zamówienie</center><br>
+                 
+                
+                <div class="name-surname">
+                <input type="text" name="imie" placeholder="Wpisz swoje imie">
+                <input type="text"" name="nazwisko" placeholder="Wpisz swoje nazwisko">
+                </div>
+        
+                <input type="email"  name="email" placeholder="Wpisz swój adres e-mail">
+                <input type="tel"  name="number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required  placeholder="Numer telefonu">
+        
+                <div class="delivery">
+                <input type="checkbox" id="checkbox" onchange="delivery()">
+                <label for="text">Zamówienie z dostawą</label>
+                </div>
+        
+                <div class="delivery-address" style="display:none">
+
+                <input type="text" id="text" name="text" placeholder="Adres dostawy">
+                </div>
+        
+                <input type="Reset" value="Cancel"></button>
+                <input type="Submit"  value="Submit"></button>
+            </form>
+        </div>
+        
+        <div class="col-sm-12 col-md-4 container-infomation">
+            <div class="logo-information"><i class="fa fa-info"></i></div>
+            <div id="title_information">Informacje</div>
+            
+        <p class="info-content">
+            Wypełniając formularz obok, wiadomość zostanie przesłana na adres e-mail.
+            Koszt preorderu nie przekracza 19,99 zł ktore prosimy przelac na numer tel.<b style="font-size: larger; font-weight: 600;"> +48 693-770-162 / +48 575-327-539</b>, w miejsce tytulu przelewu wpisac Imie oraz Nazwisko. 
+            W polu "Informacje Dodatkowe" mozna wpisac adres dostawy (kontaktowac sie przez <a href="https://instagram.com/ksm.label?igshid=OGQ5ZDc2ODk2ZA==" style="color:black;">Instagram</a>), w przeciwnym przypadku "-".
+            Formularz służy także weryfikacji zgodności przelewu i danych wypelnionych w formularzu.
+            Dokładamy wszelkich starań, aby zapewnić Państwu najlepszą obsługę.Liczymy na Państwa zrozumienie i pozostajemy do dyspozycji w razie pytań.
+            <hr class="line-article">
+            <center class="article-center">Dziękujemy za współpracę.</center>
+        </p>
+        
+        </div>
+    </div>
 <!--basket-shop-end--></div>
 
 
@@ -153,22 +200,22 @@
 
     <div class="products">
 
-        <div class="product-before col-sm-12 col-md-2">
+        <div class="product-before col-sm-12 col-md-2" onclick="addProduct('4.jpg','YounGOleksandr - FortniteIsmYliFe','19,99')">
             <img src="photos/test/4.jpg" class="product-img-before">
             <div class="title-product-before">YounGOleksandr - "FortniteIsmYliFe"</div>
             <span class="price-product-before">19,99</span>
         </div>
-        <div class="product-before col-sm-12 col-md-2">
+        <div class="product-before col-sm-12 col-md-2" onclick="addProduct('5.jpg','Speeeeed - Ijustwannafucku','19,99')">
             <img src="photos/test/5.jpg" class="product-img-before">
             <div class="title-product-before">Speeeeed - "Ijustwannafucku"</div>
             <span class="price-product-before">19,99</span>
         </div>
-        <div class="product-before col-sm-12 col-md-2">
+        <div class="product-before col-sm-12 col-md-2" onclick="addProduct('6.jpg','SuperHyperSex - KillMePls','19,99')">
             <img src="photos/test/6.jpg" class="product-img-before">
             <div class="title-product-before">SuperHyperSex - "KillMePls"</div>
             <span class="price-product-before">19,99</span>
         </div>
-        <div class="product-before col-sm-12 col-md-3">
+        <div class="product-before col-sm-12 col-md-3" onclick="addProduct('7.jpg','SuperHyperSex - KillMePls','19,99')">
             <img src="photos/test/7.jpg" class="product-img-before">
             <div class="title-product-before">SuperHyperSex - "KillMePls"</div>
             <span class="price-product-before">19,99</span>

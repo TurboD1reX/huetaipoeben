@@ -157,111 +157,8 @@
           box-shadow: 0px 0px 25px 0px #4578BD;
         }
 
-.container-news-fluid{
-    margin-top:50px;
 
-}
-.container-box-news{
-  display:flex;
-  justify-items: center;
-  align-items: center;
-  margin:auto;
-}
-.box-news p {
-  margin-top:20px;
-}
-.box-news{
-  font-size:20px;
-  margin:auto;
-  margin-bottom:100px;
-  padding:20px;
-  border:1px solid #c0c0c0;
-  border-radius:0.5em;
-}
-
-.title{
-font-size:60px;
-color:#000000;
-font-weight:900;
-text-transform:uppercase;
-}
-
-.news-container{
-  margin:auto;
-  height:auto;
-  margin-bottom:100px;
-  margin-top:100px;
-}
-.news-box-container{
-  height:400px;
-  margin-top:30px;
-  margin-bottom:50px;
-  display: flex;
-  justify-content: center; 
-  align-items: center;
-}
-.news-box p{
-  margin-top:25px;
-  color:rgb(148, 148, 148)
-}
-.news-box{
-height:100%;
-margin:30px;
-width:30%;
-padding: 20px 20px ;
-border:1px solid #c0c0c0;
-border-radius:20px;
-font-size:18px;
-
-}
-.date-news{
-  color:rgb(0, 110, 255);
-  text-decoration: underline;
-}
-.news-box strong {
-  text-transform: uppercase;
-
-  width:100%;
-  font-size:25px;
-}
-.title-news{
-  width:300px;
-  text-transform: uppercase;
-  width:100%;
-  font-size:50px;
-  font-weight: 200;
-  color:black;
-}
-.news-label{
-  float:right;
-  width:45px;
-  height:20px;
-  padding:1px;
-  text-align: center;
-  font-size:13px;
-  font-weight: 900;
-  background-color: red;
-  color:white;
-  border-radius:  30em;;
-}
-
-.title button{
-    font-size:30px;
-    border-radius:30em;
-    background-color:#4578BD;
-    margin:0px;
-    border:none;
-    padding:5px 50px;
-    color:white;
-    font-weight:900;
-    transition:ease 0.2s;
-}
-.title button:hover{
-    transition:ease 0.2s;
-    transform:scale(0.95);
-    color:#a8a8a8;
-}
-    @media only screen and (max-width:767px){
+@media only screen and (max-width:767px){
       .social-media-container{
         margin-left:-10px;
         height:auto;
@@ -303,17 +200,5 @@ right: 15px;
 footer {
 height:200px;   
 }
-.container-news-fluid{
-width:100%;      
-}
-.news-box-container{
-  height:auto;
-display:block;
-}
-.news-box{
-margin-top:0px;
-height:auto;
-margin-left:0px;
-width:100%;
-}
+
 }
